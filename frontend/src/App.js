@@ -62,7 +62,7 @@ function App() {
     fetchCategories();
   }, []);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename ="/ak">
       <div
         className={
           sidebarIsOpen
@@ -177,7 +177,7 @@ function App() {
         </div>
         <main>
           <Container className="mt-3">
-            <Routes basename ="/ak"> 
+            <Routes > 
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/search" element={<SearchScreen />} />
