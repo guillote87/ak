@@ -177,7 +177,7 @@ function App() {
         </div>
         <main>
           <Container className="mt-3">
-            <Routes>
+            <Routes basename ="/ak"> 
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/search" element={<SearchScreen />} />
