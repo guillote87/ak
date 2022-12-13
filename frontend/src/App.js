@@ -62,7 +62,7 @@ function App() {
     fetchCategories();
   }, []);
   return (
-    <BrowserRouter basename ="/ak">
+    <BrowserRouter>
       <div
         className={
           sidebarIsOpen
